@@ -22,4 +22,11 @@ class RepositoryController extends Controller
     	//dd($repositoryArr);
     	return view('filesystem')->with("repoArr", $repositoryArr);
     }
+
+    public function indexByAjax()
+    {
+    	$user = Auth::user();
+    	$repositoryArr = $user->repository->wholeRepoAsArray();
+    	return json_encode($repositoryArr);
+    }
 }

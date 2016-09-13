@@ -1,7 +1,8 @@
+urlServer = "http://localhost/cloudSite/public/"
 function sendFileToServer(formData,status)
 {
-    console.log(formData);
-    var uploadURL ="http://localhost/LoginDefinitivo/public/upload"; //Upload URL
+    //console.log(formData);
+    var uploadURL ="upload"; //Upload URL
     var extraData ={}; //Extra Data.
     var jqXHR=$.ajax({
             xhr: function() {
@@ -20,7 +21,7 @@ function sendFileToServer(formData,status)
                 }
             return xhrobj;
         },
-    url: uploadURL,
+    url: urlServer+uploadURL,
     type: "POST",
     contentType:false,
     processData: false,
@@ -28,7 +29,7 @@ function sendFileToServer(formData,status)
         data: formData,
         success: function(data){
             status.setProgress(100);
- 
+            cleanFs();
             $("#status1").append("File upload Done<br>");         
         }
     }); 
@@ -97,6 +98,31 @@ function uploadFile(files,obj)
         sendFileToServer(fd,status);
  
    }
+}
+
+function cleanFs() {
+    $("#dragandrophandler").empty();
+}
+//gets all the filesystem items.
+function updateFsItems() {
+    updateUrl = "updatefilesystem";
+    $.ajax({
+        url: urlServer+updateUrl,
+        type: 'POST',
+        dataType: "JSON",
+        success: function (data, status)
+        {
+            console.log(data);
+        },
+        error: function (xhr, desc, err)
+        {
+            console.log("error");
+        }
+    });   
+}
+//creates the items based on the parameters
+function createElement(name,size,extension) {
+
 }
 
 window.onload = function() {
