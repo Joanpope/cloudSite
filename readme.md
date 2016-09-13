@@ -44,10 +44,10 @@ open a terminal and move to the project's root directory.
 
 use the following commands on the project directory:
 
-'php artisan migrate'
+`php artisan migrate`
 
 after doing the migration you should:
 
-'php artisan db:seed --class Smarch\Watchtower\Seeds\WatchtowerTableSeeder'
+`php artisan db:seed --class Smarch\Watchtower\Seeds\WatchtowerTableSeeder`
 
 to fill the main roles and permisions and get a base admin user.
