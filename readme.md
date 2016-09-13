@@ -35,3 +35,19 @@ This application intends to be something similar to Mega, its main purpose is to
 ## Purpose of the project
 
 this project is made as a way to learn how Laravel works and learn SASS.
+
+## setup project's database.
+
+change the **.env** file on the root of the project to match an actual empty database.
+
+open a terminal and move to the project's root directory.
+
+use the following commands on the project directory:
+
+'php artisan migrate'
+
+after doing the migration you should:
+
+'php artisan db:seed --class Smarch\Watchtower\Seeds\WatchtowerTableSeeder'
+
+to fill the main roles and permisions and get a base admin user.
