@@ -1,0 +1,481 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$font-stack: Helvetica, sans-serif;
+$iconMarginWidth: 0px;
+$iconMarginHeigth: 25px;
+$iconPadding: 0px;
+$iconWidth: 205px;
+$iconHeigth: 125px;
+
+
+
+#dragandrophandler {
+	width:auto;
+	height:800px;
+	border:dotted;
+}
+.progressBar {
+    width: 200px;
+    height: 22px;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    overflow: hidden;
+    display:inline-block;
+    margin:0px 10px 5px 5px;
+    vertical-align:top;
+}
+ 
+.progressBar div {
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: #0ba1b5; border-radius: 3px; 
+}
+.statusbar
+{
+    border-top:1px solid #A9CCD1;
+    min-height:25px;
+    width:700px;
+    padding:10px 10px 0px 10px;
+    vertical-align:top;
+}
+.statusbar:nth-child(odd){
+    background:#EBEFF0;
+}
+.filename
+{
+display:inline-block;
+vertical-align:top;
+width:250px;
+}
+.filesize
+{
+display:inline-block;
+vertical-align:top;
+color:#30693D;
+width:100px;
+margin-left:10px;
+margin-right:5px;
+}
+.abort{
+    background-color:#A8352F;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;display:inline-block;
+    color:#fff;
+    font-family:arial;font-size:13px;font-weight:normal;
+    padding:4px 15px;
+    cursor:pointer;
+    vertical-align:top
+    }
+
+.iconContainer {
+	float:left;
+	width: $iconWidth;
+	height: $iconHeigth;
+	margin-top:$iconMarginHeigth;
+	margin-right:$iconMarginWidth;
+	margin-left:$iconMarginWidth;
+	margin-bottom:$iconMarginHeigth;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow:hidden;
+}
+.iconEffect:hover {
+	width: $iconWidth;
+	opacity: .50;
+	background-color: white;
+}
+.fiName {
+	width: 100px;
+	font-family: $font-stack;
+}
+.fiSize {
+	width: 100px;
+	font-family: $font-stack;
+}
+.icon-folder {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/folder.png) no-repeat center;
+}
+
+.icon-json {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/json.png) no-repeat center;
+}
+.icon-jpg {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/jpg.png) no-repeat center;
+}
+.icon-aac {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/aac.png) no-repeat center;
+}
+
+.icon-ai {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ai.png) no-repeat center;
+}
+.icon-ape {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ape.png) no-repeat center;
+}
+.icon-asf {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/asf.png) no-repeat center;
+}
+.icon-avi {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/avi.png) no-repeat center;
+}
+.icon-bat {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/bat.png) no-repeat center;
+}
+.icon-bmp {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/bmp.png) no-repeat center;
+}
+.icon-cdr {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/cdr.png) no-repeat center;
+}
+.icon-cfg {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/cfg.png) no-repeat center;
+}
+.icon-chm {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/chm.png) no-repeat center;
+}
+.icon-com {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/com.png) no-repeat center;
+}
+.icon-css {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/css.png) no-repeat center;
+}
+.icon-csv {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/csv.png) no-repeat center;
+}
+.icon-djv {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/djv.png) no-repeat center;
+}
+.icon-dll {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/dll.png) no-repeat center;
+}
+.icon-dmg {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/dmg.png) no-repeat center;
+}
+.icon-doc {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/doc.png) no-repeat center;
+}
+.icon-docx {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/docx.png) no-repeat center;
+}
+.icon-eps {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/eps.png) no-repeat center;
+}
+.icon-exe {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/exe.png) no-repeat center;
+}
+.icon-fla {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/fla.png) no-repeat center;
+}
+.icon-flac {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/flac.png) no-repeat center;
+}
+.icon-flv {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/flv.png) no-repeat center;
+}
+.icon-gif {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/gif.png) no-repeat center;
+}
+.icon-html {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/html.png) no-repeat center;
+}
+.icon-icl {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/icl.png) no-repeat center;
+}
+.icon-icns {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/icns.png) no-repeat center;
+}
+.icon-ico {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ico.png) no-repeat center;
+}
+.icon-ini {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ini.png) no-repeat center;
+}
+.icon-iso {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/iso.png) no-repeat center;
+}
+.icon-ini {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ini.png) no-repeat center;
+}
+.icon-iso {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/iso.png) no-repeat center;
+}
+.icon-log {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/log.png) no-repeat center;
+}
+.icon-js {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/js.png) no-repeat center;
+}
+.icon-midi {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/midi.png) no-repeat center;
+}
+
+.icon-mkv {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/mkv.png) no-repeat center;
+}
+.icon-mov {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/mov.png) no-repeat center;
+}
+.icon-mp3 {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/mp3.png) no-repeat center;
+}
+.icon-mp4 {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/mp4.png) no-repeat center;
+}
+.icon-mpg {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/mpg.png) no-repeat center;
+}
+.icon-ogg {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ogg.png) no-repeat center;
+}
+.icon-ogm {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ogm.png) no-repeat center;
+}
+.icon-otf {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/otf.png) no-repeat center;
+}
+.icon-pdf {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/pdf.png) no-repeat center;
+}
+.icon-php {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/php.png) no-repeat center;
+}
+.icon-png {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/png.png) no-repeat center;
+}
+.icon-ppt {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ppt.png) no-repeat center;
+}
+.icon-pptx {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/pptx.png) no-repeat center;
+}
+.icon-ps {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ps.png) no-repeat center;
+}
+.icon-psd {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/psd.png) no-repeat center;
+}
+.icon-ra {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ra.png) no-repeat center;
+}
+.icon-rar {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/rar.png) no-repeat center;
+}
+.icon-raw {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/raw.png) no-repeat center;
+}
+.icon-rm {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/rm.png) no-repeat center;
+}
+.icon-rtf {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/rtf.png) no-repeat center;
+}
+.icon-sh {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/sh.png) no-repeat center;
+}
+.icon-sql {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/sql.png) no-repeat center;
+}
+.icon-svg {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/svg.png) no-repeat center;
+}
+.icon-svgz {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/svgz.png) no-repeat center;
+}
+.icon-swf {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/swf.png) no-repeat center;
+}
+.icon-sys {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/sys.png) no-repeat center;
+}
+.icon-tar {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/tar.png) no-repeat center;
+}
+.icon-tga {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/tga.png) no-repeat center;
+}
+.icon-tif {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/tif.png) no-repeat center;
+}
+.icon-ttf {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/ttf.png) no-repeat center;
+}
+.icon-txt {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/txt.png) no-repeat center;
+}
+.icon-wav {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/wav.png) no-repeat center;
+}
+.icon-wma {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/wma.png) no-repeat center;
+}
+.icon-wmv {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/wmv.png) no-repeat center;
+}
+.icon-xls {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/xls.png) no-repeat center;
+}
+.icon-xlsx {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/xlsx.png) no-repeat center;
+}
+.icon-xml {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/xml.png) no-repeat center;
+}
+.icon-zip {
+	width: $iconWidth;
+	height: $iconHeigth;
+	background:url(../img/zip.png) no-repeat center;
+}
+

@@ -1,0 +1,466 @@
+#dragandrophandler {
+  width: auto;
+  height: 800px;
+  border: dotted; }
+
+.progressBar {
+  width: 200px;
+  height: 22px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0px 10px 5px 5px;
+  vertical-align: top; }
+
+.progressBar div {
+  height: 100%;
+  color: #fff;
+  text-align: right;
+  line-height: 22px;
+  /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: #0ba1b5;
+  border-radius: 3px; }
+
+.statusbar {
+  border-top: 1px solid #A9CCD1;
+  min-height: 25px;
+  width: 700px;
+  padding: 10px 10px 0px 10px;
+  vertical-align: top; }
+
+.statusbar:nth-child(odd) {
+  background: #EBEFF0; }
+
+.filename {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px; }
+
+.filesize {
+  display: inline-block;
+  vertical-align: top;
+  color: #30693D;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 5px; }
+
+.abort {
+  background-color: #A8352F;
+  border-radius: 4px;
+  display: inline-block;
+  color: #fff;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 4px 15px;
+  cursor: pointer;
+  vertical-align: top; }
+
+.iconContainer {
+  float: left;
+  width: 205px;
+  height: 125px;
+  margin-top: 25px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 25px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: hidden; }
+
+.iconEffect:hover {
+  width: 205px;
+  opacity: .50;
+  background-color: white; }
+
+.fiName {
+  width: 100px;
+  font-family: Helvetica, sans-serif; }
+
+.fiSize {
+  width: 100px;
+  font-family: Helvetica, sans-serif; }
+
+.icon-folder {
+  width: 205px;
+  height: 125px;
+  background: url(../img/folder.png) no-repeat center; }
+
+.icon-json {
+  width: 205px;
+  height: 125px;
+  background: url(../img/json.png) no-repeat center; }
+
+.icon-jpg {
+  width: 205px;
+  height: 125px;
+  background: url(../img/jpg.png) no-repeat center; }
+
+.icon-aac {
+  width: 205px;
+  height: 125px;
+  background: url(../img/aac.png) no-repeat center; }
+
+.icon-ai {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ai.png) no-repeat center; }
+
+.icon-ape {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ape.png) no-repeat center; }
+
+.icon-asf {
+  width: 205px;
+  height: 125px;
+  background: url(../img/asf.png) no-repeat center; }
+
+.icon-avi {
+  width: 205px;
+  height: 125px;
+  background: url(../img/avi.png) no-repeat center; }
+
+.icon-bat {
+  width: 205px;
+  height: 125px;
+  background: url(../img/bat.png) no-repeat center; }
+
+.icon-bmp {
+  width: 205px;
+  height: 125px;
+  background: url(../img/bmp.png) no-repeat center; }
+
+.icon-cdr {
+  width: 205px;
+  height: 125px;
+  background: url(../img/cdr.png) no-repeat center; }
+
+.icon-cfg {
+  width: 205px;
+  height: 125px;
+  background: url(../img/cfg.png) no-repeat center; }
+
+.icon-chm {
+  width: 205px;
+  height: 125px;
+  background: url(../img/chm.png) no-repeat center; }
+
+.icon-com {
+  width: 205px;
+  height: 125px;
+  background: url(../img/com.png) no-repeat center; }
+
+.icon-css {
+  width: 205px;
+  height: 125px;
+  background: url(../img/css.png) no-repeat center; }
+
+.icon-csv {
+  width: 205px;
+  height: 125px;
+  background: url(../img/csv.png) no-repeat center; }
+
+.icon-djv {
+  width: 205px;
+  height: 125px;
+  background: url(../img/djv.png) no-repeat center; }
+
+.icon-dll {
+  width: 205px;
+  height: 125px;
+  background: url(../img/dll.png) no-repeat center; }
+
+.icon-dmg {
+  width: 205px;
+  height: 125px;
+  background: url(../img/dmg.png) no-repeat center; }
+
+.icon-doc {
+  width: 205px;
+  height: 125px;
+  background: url(../img/doc.png) no-repeat center; }
+
+.icon-docx {
+  width: 205px;
+  height: 125px;
+  background: url(../img/docx.png) no-repeat center; }
+
+.icon-eps {
+  width: 205px;
+  height: 125px;
+  background: url(../img/eps.png) no-repeat center; }
+
+.icon-exe {
+  width: 205px;
+  height: 125px;
+  background: url(../img/exe.png) no-repeat center; }
+
+.icon-fla {
+  width: 205px;
+  height: 125px;
+  background: url(../img/fla.png) no-repeat center; }
+
+.icon-flac {
+  width: 205px;
+  height: 125px;
+  background: url(../img/flac.png) no-repeat center; }
+
+.icon-flv {
+  width: 205px;
+  height: 125px;
+  background: url(../img/flv.png) no-repeat center; }
+
+.icon-gif {
+  width: 205px;
+  height: 125px;
+  background: url(../img/gif.png) no-repeat center; }
+
+.icon-html {
+  width: 205px;
+  height: 125px;
+  background: url(../img/html.png) no-repeat center; }
+
+.icon-icl {
+  width: 205px;
+  height: 125px;
+  background: url(../img/icl.png) no-repeat center; }
+
+.icon-icns {
+  width: 205px;
+  height: 125px;
+  background: url(../img/icns.png) no-repeat center; }
+
+.icon-ico {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ico.png) no-repeat center; }
+
+.icon-ini {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ini.png) no-repeat center; }
+
+.icon-iso {
+  width: 205px;
+  height: 125px;
+  background: url(../img/iso.png) no-repeat center; }
+
+.icon-ini {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ini.png) no-repeat center; }
+
+.icon-iso {
+  width: 205px;
+  height: 125px;
+  background: url(../img/iso.png) no-repeat center; }
+
+.icon-log {
+  width: 205px;
+  height: 125px;
+  background: url(../img/log.png) no-repeat center; }
+
+.icon-js {
+  width: 205px;
+  height: 125px;
+  background: url(../img/js.png) no-repeat center; }
+
+.icon-midi {
+  width: 205px;
+  height: 125px;
+  background: url(../img/midi.png) no-repeat center; }
+
+.icon-mkv {
+  width: 205px;
+  height: 125px;
+  background: url(../img/mkv.png) no-repeat center; }
+
+.icon-mov {
+  width: 205px;
+  height: 125px;
+  background: url(../img/mov.png) no-repeat center; }
+
+.icon-mp3 {
+  width: 205px;
+  height: 125px;
+  background: url(../img/mp3.png) no-repeat center; }
+
+.icon-mp4 {
+  width: 205px;
+  height: 125px;
+  background: url(../img/mp4.png) no-repeat center; }
+
+.icon-mpg {
+  width: 205px;
+  height: 125px;
+  background: url(../img/mpg.png) no-repeat center; }
+
+.icon-ogg {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ogg.png) no-repeat center; }
+
+.icon-ogm {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ogm.png) no-repeat center; }
+
+.icon-otf {
+  width: 205px;
+  height: 125px;
+  background: url(../img/otf.png) no-repeat center; }
+
+.icon-pdf {
+  width: 205px;
+  height: 125px;
+  background: url(../img/pdf.png) no-repeat center; }
+
+.icon-php {
+  width: 205px;
+  height: 125px;
+  background: url(../img/php.png) no-repeat center; }
+
+.icon-png {
+  width: 205px;
+  height: 125px;
+  background: url(../img/png.png) no-repeat center; }
+
+.icon-ppt {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ppt.png) no-repeat center; }
+
+.icon-pptx {
+  width: 205px;
+  height: 125px;
+  background: url(../img/pptx.png) no-repeat center; }
+
+.icon-ps {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ps.png) no-repeat center; }
+
+.icon-psd {
+  width: 205px;
+  height: 125px;
+  background: url(../img/psd.png) no-repeat center; }
+
+.icon-ra {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ra.png) no-repeat center; }
+
+.icon-rar {
+  width: 205px;
+  height: 125px;
+  background: url(../img/rar.png) no-repeat center; }
+
+.icon-raw {
+  width: 205px;
+  height: 125px;
+  background: url(../img/raw.png) no-repeat center; }
+
+.icon-rm {
+  width: 205px;
+  height: 125px;
+  background: url(../img/rm.png) no-repeat center; }
+
+.icon-rtf {
+  width: 205px;
+  height: 125px;
+  background: url(../img/rtf.png) no-repeat center; }
+
+.icon-sh {
+  width: 205px;
+  height: 125px;
+  background: url(../img/sh.png) no-repeat center; }
+
+.icon-sql {
+  width: 205px;
+  height: 125px;
+  background: url(../img/sql.png) no-repeat center; }
+
+.icon-svg {
+  width: 205px;
+  height: 125px;
+  background: url(../img/svg.png) no-repeat center; }
+
+.icon-svgz {
+  width: 205px;
+  height: 125px;
+  background: url(../img/svgz.png) no-repeat center; }
+
+.icon-swf {
+  width: 205px;
+  height: 125px;
+  background: url(../img/swf.png) no-repeat center; }
+
+.icon-sys {
+  width: 205px;
+  height: 125px;
+  background: url(../img/sys.png) no-repeat center; }
+
+.icon-tar {
+  width: 205px;
+  height: 125px;
+  background: url(../img/tar.png) no-repeat center; }
+
+.icon-tga {
+  width: 205px;
+  height: 125px;
+  background: url(../img/tga.png) no-repeat center; }
+
+.icon-tif {
+  width: 205px;
+  height: 125px;
+  background: url(../img/tif.png) no-repeat center; }
+
+.icon-ttf {
+  width: 205px;
+  height: 125px;
+  background: url(../img/ttf.png) no-repeat center; }
+
+.icon-txt {
+  width: 205px;
+  height: 125px;
+  background: url(../img/txt.png) no-repeat center; }
+
+.icon-wav {
+  width: 205px;
+  height: 125px;
+  background: url(../img/wav.png) no-repeat center; }
+
+.icon-wma {
+  width: 205px;
+  height: 125px;
+  background: url(../img/wma.png) no-repeat center; }
+
+.icon-wmv {
+  width: 205px;
+  height: 125px;
+  background: url(../img/wmv.png) no-repeat center; }
+
+.icon-xls {
+  width: 205px;
+  height: 125px;
+  background: url(../img/xls.png) no-repeat center; }
+
+.icon-xlsx {
+  width: 205px;
+  height: 125px;
+  background: url(../img/xlsx.png) no-repeat center; }
+
+.icon-xml {
+  width: 205px;
+  height: 125px;
+  background: url(../img/xml.png) no-repeat center; }
+
+.icon-zip {
+  width: 205px;
+  height: 125px;
+  background: url(../img/zip.png) no-repeat center; }
+
+/*# sourceMappingURL=app.css.map */
