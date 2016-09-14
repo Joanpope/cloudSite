@@ -30,6 +30,7 @@ function sendFileToServer(formData,status)
         success: function(data){
             status.setProgress(100);
             cleanFs();
+            updateFsItems();
             $("#status1").append("File upload Done<br>");         
         }
     }); 
@@ -105,14 +106,15 @@ function cleanFs() {
 }
 //gets all the filesystem items.
 function updateFsItems() {
-    updateUrl = "updatefilesystem";
+    updateUrl = "filesystem";
     $.ajax({
         url: urlServer+updateUrl,
-        type: 'POST',
-        dataType: "JSON",
+        type: 'GET',
         success: function (data, status)
         {
             console.log(data);
+            $('#dragandrophandler').empty().html($(data));
+            //console.log(data);
         },
         error: function (xhr, desc, err)
         {
@@ -120,11 +122,6 @@ function updateFsItems() {
         }
     });   
 }
-//creates the items based on the parameters
-function createElement(name,size,extension) {
-
-}
-
 window.onload = function() {
         $.ajaxSetup({
           headers: {

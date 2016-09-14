@@ -20,6 +20,5 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 Route::get('/filesystem', ['middleware' => 'auth','uses' => 'RepositoryController@index']);
 
-Route::post('/filesystemByAjax', ['middleware' => 'auth','uses' => 'RepositoryController@indexByAjax']);
 Route::post('/upload', ['middleware' => 'auth','uses' => 'ApplyController@uploadFile']);
 

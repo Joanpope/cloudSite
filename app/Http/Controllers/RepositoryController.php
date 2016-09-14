@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\View;
+use Illuminate\Http\Response;
 use \Auth as Auth;
 use App\Http\Requests;
 
@@ -15,18 +17,18 @@ class RepositoryController extends Controller
 }*/
 
 
-    public function index()
+    public function index(Request $request)
     {
     	$user = Auth::user();
     	$repositoryArr = $user->repository->wholeRepoAsArray();
+    	$view = view('iconCreation')->with("repoArr", $repositoryArr);
     	//dd($repositoryArr);
-    	return view('filesystem')->with("repoArr", $repositoryArr);
+    	if ($request->ajax()) {
+    		$sections = $view->renderSections();
+    		return response()->json($sections['iconCreation']);	
+    	} else {
+    		return $view;
+    	}
     }
 
-    public function indexByAjax()
-    {
-    	$user = Auth::user();
-    	$repositoryArr = $user->repository->wholeRepoAsArray();
-    	return json_encode($repositoryArr);
-    }
 }
