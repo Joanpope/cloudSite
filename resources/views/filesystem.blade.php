@@ -13,4 +13,5 @@
     </div>
 </div>
 <script src="{{ URL::asset('js/upload.js') }}"></script>
+<script src="{{ URL::asset('js/menu.js') }}"></script>
 @endsection

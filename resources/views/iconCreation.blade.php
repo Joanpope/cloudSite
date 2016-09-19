@@ -1,7 +1,7 @@
 @extends('filesystem')
 @section('iconCreation')
   @foreach ($repoArr['fileSystemItem'] as $fsItem)
-      <div class="iconContainer">
+      <div class="iconContainer dropdownmenu">
         <div class="iconEffect">
           <div class="icon-{{ $fsItem['extensio'] }}">
           </div>
