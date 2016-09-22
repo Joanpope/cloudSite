@@ -7,6 +7,24 @@ $iconWidth: 205px;
 $iconHeigth: 125px;
 
 
+#itemMenu {
+	width:90px;
+	background-color:grey;
+	color:black;
+	border:solid 1px black;
+	display:none;
+}
+#itemMenu ul {
+	height:100%;
+}
+.option {
+	border-bottom:solid 1px black;
+	width:100%;
+}
+.option:hover {
+	opacity: .50;
+	width:100%;
+}
 
 #dragandrophandler {
 	width:auto;
