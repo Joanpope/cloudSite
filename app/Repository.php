@@ -48,9 +48,12 @@ class Repository extends Model
       
     }
 
-    public function download()
+    public function download($fileName)
     {
-        
+        $pathToFile = \Config::get('constants.RepoLocation'); 
+        $pathToFile .= Auth::user()->repository->url; // upload path
+        $pathToFile .= $fileName;
+        return response()->file($pathToFile);
     }
 
     public function wholeRepoAsArray()

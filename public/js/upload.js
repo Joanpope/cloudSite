@@ -1,4 +1,5 @@
-urlServer = "http://localhost/cloudSite/public/"
+var urlServer = "http://localhost/cloudSite/public/";
+
 function sendFileToServer(formData,status)
 {
     //console.log(formData);

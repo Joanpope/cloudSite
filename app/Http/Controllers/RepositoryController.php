@@ -31,4 +31,10 @@ class RepositoryController extends Controller
     	}
     }
 
+    public function downloadFile($fileName)
+    {
+    	$user = Auth::user();
+    	return $user->repository->download($fileName);
+    }
+
 }

@@ -6,6 +6,7 @@
           <div class="icon-{{ $fsItem['extensio'] }}">
           </div>
           <div class="iconText">
+            <span class="fiId hidden">{{ $fsItem['id'] }}</span>
             <span class="fiName">{{ $fsItem['name'] }}</span></br>
             <span class="fiSize">Size:  {{ $fsItem['size'] }} KB</span></br>
           </div>

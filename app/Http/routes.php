@@ -19,6 +19,6 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/filesystem', ['middleware' => 'auth','uses' => 'RepositoryController@index']);
-
+Route::get('/getFile/{fileName}', ['middleware' => 'auth','uses' => 'RepositoryController@downloadFile']);
 Route::post('/upload', ['middleware' => 'auth','uses' => 'ApplyController@uploadFile']);
 
